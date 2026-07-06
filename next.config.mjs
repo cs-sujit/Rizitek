@@ -4,6 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: "/Rizitek",
+  assetPrefix: "/Rizitek/",
 };
 
 export default nextConfig;
