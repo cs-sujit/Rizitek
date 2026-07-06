@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-display: 'Archivo Black', 'Arial Black', sans-serif;
+  --font-body: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #f4f0e4;
+  color: #0b0d10;
+}
+
+::selection {
+  background-color: #f5c400;
+  color: #0b0d10;
+}
+
+.focus-ring:focus-visible {
+  outline: 3px solid #f5c400;
+  outline-offset: 3px;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Custom cursor — only engaged on fine-pointer/desktop via the
+   .custom-cursor-active class toggled by CustomCursor.tsx */
+.custom-cursor-active,
+.custom-cursor-active a,
+.custom-cursor-active button {
+  cursor: none;
+}
+
+.cursor-dot,
+.cursor-ring {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 0.2s ease;
+}
+
+.cursor-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 9999px;
+  background-color: #0b0d10;
+  mix-blend-mode: difference;
+  filter: invert(1);
+}
+
+.cursor-ring {
+  width: 40px;
+  height: 40px;
+  border-radius: 9999px;
+  border: 1.5px solid #f5c400;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: width 0.25s ease, height 0.25s ease, background-color 0.25s ease, opacity 0.2s ease;
+}
+
+.cursor-ring[data-state='hover'] {
+  width: 72px;
+  height: 72px;
+  background-color: rgba(245, 196, 0, 0.14);
+}
+
+.cursor-ring[data-pressed='true'] {
+  width: 32px;
+  height: 32px;
+}
+
+.cursor-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #f5c400;
+  white-space: nowrap;
+}
+
