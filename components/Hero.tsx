@@ -104,7 +104,7 @@ export default function Hero() {
 
           <p style={inStyle(260)} className="mt-6 flex flex-wrap items-center gap-2 text-[18px] text-cream/70 font-bold">
             One stop &amp; shop for
-            <span className="relative inline-flex h-10 min-w-[10rem] items-center overflow-hidden bg-yellow-600 px-5 font-display text-sm text-ink rounded-md">
+            <span className="relative inline-flex h-10 min-w-[10rem] items-center overflow-hidden bg-yellow-500 px-2 font-display text-sm text-cream rounded-md">
               <span key={wordIndex} className="animate-[fadeSlide_0.5s_ease]">
                 {STOP_SHOP_WORDS[wordIndex]}
               </span>
@@ -115,7 +115,7 @@ export default function Hero() {
             <Link
               href="/products"
               data-cursor="Explore"
-              className="focus-ring inline-flex items-center gap-2 bg-yellow-600 px-6 py-3 text-[13px] font-bold uppercase tracking-wide text-ink transition hover:bg-cream rounded-md"
+              className="focus-ring inline-flex items-center gap-2 bg-yellow-500 px-6 py-3 text-[13px] font-bold uppercase tracking-wide text-ink transition hover:bg-cream rounded-md"
             >
               Explore Our Products <span aria-hidden="true">→</span>
             </Link>

@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <main>
       <Hero />
-      <MarqueeBar
+      {/* <MarqueeBar
         items={[
           '360° BIRD\u2019S EYE VIEW',
           'PROXIMITY WARNING',
@@ -92,7 +92,7 @@ export default function Home() {
           'REAR VISION',
           'MINING SAFETY',
         ]}
-      />
+      /> */}
 
       {/* Why choose Rizitek */}
       <section className="overflow-hidden bg-white">

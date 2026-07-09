@@ -99,7 +99,7 @@ function NavBar({
         href="/"
         className={`focus-ring hidden items-center gap-2 px-5 py-3 text-[13px] font-bold uppercase tracking-wide transition md:inline-flex bg-transparent hover:scale-105`}
       >
-        <Image src="./self_india.jpeg" alt="Self-Independent India" width={150} height={30} className=" md:inline-block rounded-md" />
+        <Image src="./self_india_t.png" alt="Self-Independent India" width={150} height={30} className=" md:inline-block rounded-md" />
       </Link>
       
 
