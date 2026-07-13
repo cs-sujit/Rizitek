@@ -93,12 +93,12 @@ export default function Hero() {
           <h1
             key={`caption-${slideIndex}`}
             style={inStyle(90)}
-            className="mt-6 font-display text-[10vw] leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl"
+            className="mt-6 font-display line-clamp-2 text-[10vw] leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl xl:text-7xl"
           >
             {slide.caption}
           </h1>
 
-          <p key={`detail-${slideIndex}`} style={inStyle(180)} className="mt-6 max-w-xl text-[15px] leading-relaxed text-cream/70 sm:text-base">
+          <p key={`detail-${slideIndex}`} style={inStyle(180)} className="mt-6 max-w-xl line-clamp-2 text-[15px] leading-relaxed text-cream/70 sm:text-base">
             {slide.detail}
           </p>
 
@@ -115,7 +115,7 @@ export default function Hero() {
             <Link
               href="/products"
               data-cursor="Explore"
-              className="focus-ring inline-flex items-center gap-2 bg-yellow-500 px-6 py-3 text-[13px] font-bold uppercase tracking-wide text-ink transition hover:bg-cream rounded-md"
+              className="focus-ring inline-flex items-center gap-2 bg-yellow-500 px-6 py-3 text-[13px] font-bold uppercase tracking-wide text-cream transition hover:bg-cream hover:text-black rounded-md"
             >
               Explore Our Products <span aria-hidden="true">→</span>
             </Link>

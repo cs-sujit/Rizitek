@@ -199,7 +199,7 @@ export default function Home() {
       
 
       {/* Services strip */}
-      <section className="bg-signal">
+      <section className="bg-yellow-400">
         <div className="mx-auto max-w-[1400px] px-6 py-20 md:px-10 md:py-28">
           <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
             <Reveal className="lg:col-span-6" once={false} soft >
